@@ -1919,6 +1919,26 @@ a:hover,
     color: #888; /* hover时稍微亮一点,但还是灰色 */
 }
 
+/* 手机端:分行显示 */
+@media screen and (max-width: 768px) {
+    .nickname-input {
+        display: block !important;
+    }
+    
+    .nickname-input input[type="text"] {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .nickname-input button {
+        display: block !important;
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+}
+
 /* 章节列表容器 */
 #chapter-list {
     line-height: 1 !important;
